@@ -21,6 +21,8 @@ class UserRepo(
         importUsersFromResource()
     }
 
+    fun findAll(): Iterable<User> = map.values.sortedBy { it.username }
+
     /**
      * Map<Email, EncodedPassword>
      */

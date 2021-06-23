@@ -2,9 +2,9 @@ package fa.market.open
 
 //import kotlinx.css as xxx
 
-import fa.market.user.RoleGroup
 import fa.market.common.FastHtmlDoc
 import fa.market.common.Session
+import fa.market.user.RoleGroup
 import kotlinx.css.BorderCollapse
 import kotlinx.css.BorderStyle
 import kotlinx.css.Color
@@ -25,7 +25,7 @@ import kotlinx.html.tr
 import ss.html.css
 
 
-class HomePage(session: Session) : FastHtmlDoc(session) {
+class HomePage(session: Session = Session()) : FastHtmlDoc(session) {
     data class Link(
         val path: String,
         val text: String = path,

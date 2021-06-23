@@ -44,6 +44,7 @@ abstract class FastHtmlDoc(private val session: Session) {
             title {
                 +"$pageTitle Fast Ascension"
             }
+            
         }
     }
 
@@ -55,6 +56,9 @@ abstract class FastHtmlDoc(private val session: Session) {
                 padding(0.px)
             }
             div {
+                a {  }
+                h1{  +"" }
+                
                 css {
                     display = Display.flex
                     flexDirection = FlexDirection.row
@@ -80,6 +84,7 @@ abstract class FastHtmlDoc(private val session: Session) {
                     }
                 }
 
+                
 
             }
             div {

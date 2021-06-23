@@ -1,0 +1,33 @@
+root = true
+
+[*]
+max_line_length = 1000
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = false
+tab_width = 4
+trim_trailing_whitespace = false
+ij_continuation_indent_size = 8
+ij_formatter_off_tag = @fmt:off
+ij_formatter_on_tag = @fmt:on
+ij_formatter_tags_enabled = true
+ij_smart_tabs = false
+ij_visual_guides = none
+ij_wrap_on_typing = false
+
+
+[{*.kts,*.kt}]
+ij_kotlin_code_style_defaults = KOTLIN_OFFICIAL
+ij_kotlin_imports_layout = *,java.**,javax.**,kotlin.**,^
+ij_kotlin_name_count_to_use_star_import = 999
+ij_kotlin_name_count_to_use_star_import_for_members = 999
+ij_java_class_count_to_use_import_on_demand = 999
+ij_java_names_count_to_use_import_on_demand = 999
+ij_java_packages_to_use_import_on_demand=unset
+ij_kotlin_packages_to_use_import_on_demand=unset
+
+[{*.yml,*.yaml}]
+ij_yaml_keep_indents_on_empty_lines = false
+ij_yaml_keep_line_breaks = true

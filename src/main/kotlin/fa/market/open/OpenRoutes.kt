@@ -1,9 +1,13 @@
+@file:Suppress("UNUSED_PARAMETER")
+
 package fa.market.open
 
+import fa.market.KtorUtil
 import fa.market.user.UserRepo
 import io.ktor.application.*
 import io.ktor.response.*
 import io.ktor.routing.*
+import io.ktor.util.PlatformUtils
 
 
 fun Routing.openRoutes(userRepo: UserRepo) {
@@ -14,7 +18,7 @@ fun Routing.openRoutes(userRepo: UserRepo) {
 
 private fun Route.home(userRepo: UserRepo) {
     get("/") {
-        call.respondText("Home Page")
+        call.respondText("Home Page: ${KtorUtil.all}")
     }
 
 }
